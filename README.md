@@ -7,6 +7,7 @@ Instead, the geometry shapefile was roughly handdrawn directly in GEE.
 For the analysis, HLSS30 collection images were used due to:
 - high spatial resolution
 - sufficient temporal resolution
+
 HLSS30 combines Sentinel-2 and Landsat 8 collection to achieve 2-3 days temporal resolution at 30 m spatial resolution
 
 To-do: Use MODIS to also monitor the long-term fire activity in Brazil since 2000 and correlate them with climate variations
