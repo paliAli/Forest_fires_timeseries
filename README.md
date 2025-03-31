@@ -1,5 +1,5 @@
 # Forest_fires_timeseries
-Monitoring fires in Brazil in 2024
+Creating a time series of fires in Brazil in 2024
 
 ## Importing region shapefile and satellite images
 First I tried to use the shapefile of Brazil was obtained from geoboundaries (1) and can be found in the folder region. However, this resulted in exceeded memory usage in GEE.
@@ -14,10 +14,11 @@ To-do: Use MODIS to also monitor the long-term fire activity in Brazil since 200
 
 ## Filtering images 
 The process was as follows:
-1) Only images from between 1st of February and 1st of September were used
+1) Only images from between 1st of March and 1st of September were used
 2) The images were filtered for the area of Brazil
-3) List of all weeks for the date period was created
-4) Function was written to iterate over the range of dates and create median composites for each week
+3) Fmask band in HLSS30 (bit 1) was used to filter out clouds 
+4) A list of biweekly periods was created 
+5) Function was written to iterate over the range of dates and create mosaic image for each 2 weeks
 
 The week function was taken from https://gis.stackexchange.com/questions/280156/mosaicking-image-collection-by-date-day-in-google-earth-engine and adjusted to my use
 
